@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & CV Profesional - Sistem Informasi & IT Designer</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- NAVIGASI -->
+    <nav class="sticky top-0 z-50 bg-[#102a43] text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="font-bold text-xl tracking-tight flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center text-white text-sm font-black">IT</span>
+                    <span>Portofolio<span class="text-blue-400">.</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#tentang" class="hover:text-blue-300 transition">Beranda</a>
+                    <a href="#keahlian" class="hover:text-blue-300 transition">Keahlian Utama</a>
+                    <a href="pendidikan.html" class="hover:text-blue-300 transition text-blue-300 font-semibold">Sertifikat & Pendidikan</a>
+                    <a href="#pengalaman" class="hover:text-blue-300 transition">Pengalaman</a>
+                    <a href="#kontak" class="hover:text-blue-300 transition">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-slate-200 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0b1d2e] px-4 pt-2 pb-4 space-y-2 border-t border-slate-700">
+            <a href="#tentang" class="block py-2 text-slate-200 hover:text-white">Beranda</a>
+            <a href="#keahlian" class="block py-2 text-slate-200 hover:text-white">Keahlian Utama</a>
+            <a href="pendidikan.html" class="block py-2 text-blue-300 font-semibold">Sertifikat & Pendidikan</a>
+            <a href="#pengalaman" class="block py-2 text-slate-200 hover:text-white">Pengalaman</a>
+            <a href="#kontak" class="block py-2 text-slate-200 hover:text-white">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="tentang" class="bg-[#102a43] text-white pt-12 pb-20 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-row-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-900/60 border border-blue-400/30 text-blue-300 text-xs font-semibold rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Siap Bekerja / Open for Opportunities
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                        Mahasiswa IT & Spesialis <span class="text-blue-400">Web & Database</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        Mahasiswa Teknologi Informasi Politeknik Aceh dengan latar belakang Elektronika (TAV SMKN 2 Banda Aceh). Memiliki kombinasi keahlian praktis hardware (elektronika/solder) serta keahlian software dalam perancangan web dan sistem basis data.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="pendidikan.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg shadow-md transition flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i> Lihat Riwayat Pendidikan & Sertifikat
+                        </a>
+                        <a href="#kontak" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-medium rounded-lg transition">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HRD Quick Summary Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900/80 backdrop-blur border border-slate-700/80 rounded-2xl p-6 shadow-xl space-y-4">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-600/30 border border-blue-400/30 flex items-center justify-center text-blue-400 text-xl font-bold">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-bold text-lg">Ringkasan HRD</h3>
+                                <p class="text-slate-400 text-xs">Poin Utama Kualifikasi Kandidat</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span><strong>Pendidikan Saat Ini:</strong> Teknologi Informasi (Politeknik Aceh)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span><strong>Latar Belakang SMKN 2:</strong> Elektronika / TAV (Menyolder & Amplifier)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span><strong>Fokus Keahlian IT:</strong> Web Development & Database Design</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span><strong>Sertifikasi Terdaftar:</strong> Sertifikat UKK, Junior Network Admin, & AI Fasilitator UMKM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN UTAMA -->
+    <section id="keahlian" class="py-16 sm:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Kompetensi Utama</h2>
+                <p class="text-3xl font-extrabold text-[#102a43]">Keahlian Bidang TI & Elektronika</p>
+                <p class="text-slate-600">Perpaduan keahlian rekayasa perangkat lunak dan dasar keteknikan elektronika.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Web Development -->
+                <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-blue-400 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-[#102a43] rounded-lg flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-[#102a43] group-hover:text-white transition">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#102a43] mb-2">Pembuatan Web</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Membangun situs web yang interaktif, responsif, dan modern menggunakan standar teknologi web terkini.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">HTML / CSS / JS</span>
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">Web Responsif</span>
+                    </div>
+                </div>
+
+                <!-- 2. Database Design -->
+                <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-blue-400 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-[#102a43] rounded-lg flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-[#102a43] group-hover:text-white transition">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#102a43] mb-2">Perancangan Basis Data</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Membuat struktur dan pengelolaan basis data (Database) yang efisien, aman, dan terintegrasi dengan aplikasi.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">SQL</span>
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">Database Design</span>
+                    </div>
+                </div>
+
+                <!-- 3. Elektronika & TAV -->
+                <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-blue-400 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-blue-100 text-[#102a43] rounded-lg flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-[#102a43] group-hover:text-white transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#102a43] mb-2">Elektronika & TAV</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pengalaman praktis menyolder komponen presisi dan perakitan perangkat audio video seperti amplifier mini.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">Menyolder</span>
+                        <span class="px-2.5 py-1 bg-white text-slate-700 text-xs font-medium border border-slate-200 rounded">Amplifier Mini</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="py-16 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#102a43]">Proyek & Pengalaman Praktek</h2>
+            </div>
+
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-4">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded">Proyek Teknologi Informasi</span>
+                        <h3 class="text-lg font-bold text-[#102a43]">Pengembangan Web & Basis Data Studi Kasus</h3>
+                        <p class="text-sm text-slate-600">Perancangan sistem aplikasi web terintegrasi dengan struktur basis data relasional di Politeknik Aceh.</p>
+                    </div>
+                    <div class="md:text-right shrink-0">
+                        <span class="text-xs text-slate-500 font-medium block">2025 - Sekarang</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-4">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded">Proyek Elektronika SMKN 2</span>
+                        <h3 class="text-lg font-bold text-[#102a43]">Perakitan & Pembuatan Amplifier Mini</h3>
+                        <p class="text-sm text-slate-600">Merancang tata letak skema, teknik penyolderan komponen, dan pengujian output suara amplifier.</p>
+                    </div>
+                    <div class="md:text-right shrink-0">
+                        <span class="text-xs text-slate-500 font-medium block">2022 - 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-16 bg-[#102a43] text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-3xl font-extrabold">Hubungi Saya</h2>
+            <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base">
+                Terbuka untuk kesempatan magang, proyek web & database, maupun kolaborasi teknis.
+            </p>
+
+            <div class="pt-4 flex flex-wrap justify-center gap-6">
+                <a href="mailto:emailanda@example.com" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg shadow transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Kirim Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0b1d2e] py-6 text-center text-xs text-slate-400 border-t border-slate-800">
+        <p>&copy; Portofolio Sistem Informasi & IT Designer. Didesain untuk Rekrutmen HRD.</p>
+    </footer>
+
+    <!-- JAVASCRIPT NAVIGASI MOBILE -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
